@@ -84,7 +84,7 @@ footer {
     width: 100%;
 }
 a {
-    color: #0077A7; /* Color para todos los enlaces */
+    color: var(--color-fondo-AzulPrincipal); /* Color para todos los enlaces */
     text-decoration: underline; /* Subrayar enlaces para mayor visibilidad */
 }
 footer a{
