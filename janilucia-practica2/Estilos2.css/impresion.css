@@ -1,0 +1,124 @@
+/*para que salga el enlace al lado*/
+a::after {
+    content:" ( " attr(href="https://6710dc56bcb337d2e2accf16--animated-sorbet-0f60ac.netlify.app/") ")";
+    font-family: serif;
+    font-size: 12pt;
+    font-style: normal;
+    text-decoration: none !important;
+}
+
+@media print {
+    /* Configuración de la página */
+    @page {
+        size: A4;
+        margin: 1.5cm;
+    }
+
+    /* Estilos generales para el cuerpo */
+    body {
+        background: white; /* Fondo blanco */
+        color: black; /* Texto negro */
+        font-family: serif; /* Fuente serif */
+        font-size: 12pt; /* Tamaño de fuente mínimo */
+        margin:0;
+        padding:0;
+        line-height: 1.2;
+    }
+    
+    h1,h2,h3{
+        color:black;
+    }
+}
+
+header img {
+    display: none; /*Eliminar imágenes decorativas  */
+    margin: 0; /* Sin márgenes */
+    padding: 0; /* Sin relleno */
+}
+
+/* Estilos para los enlaces */
+a {
+    color: blue; /* Color diferente para enlaces */
+    text-decoration: underline; /* Subrayado */
+}
+
+footer a{
+    color:blue;
+    text-decoration: underline;
+}
+
+/* Mostrar el URL de los enlaces */
+a:after {
+    content: " (" attr(href) ")"; /* Añadir el URL después del texto del enlace */
+    font-size: 12pt; /* Tamaño de fuente más pequeño para el URL */
+}
+/* Eliminar elementos no esenciales */
+
+aside{
+    display: none;
+}
+
+/* Mantener imágenes que son parte del contenido */
+img.important {
+    display: block; /* Mantener imágenes importantes */
+}
+
+/* Eliminar elementos de navegación */
+nav, .navigation, .sidebar {
+    display: none; /* Eliminar navegación */
+}
+
+/* Eliminar elementos dinámicos */
+[class*="dynamic"], [class*="interactive"] {
+    display: none; /* Eliminar elementos generados por JS, Java, Flash */
+}
+
+/* Eliminar formularios */
+form {
+    display: none; /* Eliminar formularios */
+}
+
+/* Aviso sobre derechos de uso */
+footer:after {
+    content: "© " attr(data-copyright); /* Mostrar aviso de derechos de autor */
+    display: inline; /* Mostrar en nueva línea */
+    font-size: 12pt; /* Tamaño de fuente más pequeño */
+    margin-top: 0.5cm; /* Espacio superior */
+}
+
+blockquote{
+    display:none;
+}
+
+address {
+    font-family: serif; /* Usa una fuente legible para impresión */
+    font-size: 12pt; /* Tamaño de fuente adecuado para impresión */
+    line-height: 1.5; /* Espaciado entre líneas */
+    color: black; /* Asegura que el texto sea negro */
+    margin: 0; /* Espaciado alrededor del address */
+    text-align:left;
+    
+}
+
+
+main a:after {
+    content: " (" attr(href) ")"; /* Muestra el URL del enlace */
+    font-size: 0.8em; /* Tamaño más pequeño para el URL */
+    color:blue;
+}
+
+/* Control de viudas y huérfanas */
+p {
+    
+    widows: 2; /* Mínimo número de líneas al final de un párrafo--> debería mantenerse al menos dos líneas en la página anterior.*/
+    orphans: 2; /* Mínimo número de líneas al inicio de un párrafo --> párrafo comienza al menos con 2 líneas */
+    text-align: left;
+    display:inline;
+    line-height: 1.5;
+    white-space: pre-line; /* Mantiene los saltos de línea y colapsa los espacios en blanco */
+}
+
+/* Asegurar saltos de página adecuados */
+.page-break {
+    page-break-before: always; /* Saltar a la siguiente página */
+}

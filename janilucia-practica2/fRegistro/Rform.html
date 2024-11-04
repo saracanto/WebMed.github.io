@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset ="utf-8">
+        <link rel="stylesheet" href="../Estilos.css/maquetacionForm.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/modoNoche.css" media="screen" Title="Modo Noche">
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/combinacion.css" media="screen" Title="Alto contraste y aumento de letra">
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/aumentoLetra.css" media="screen" Title="Estilo de tamaño grande">
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/contraste.css" media="screen" Title="Estilo de alto contraste">
+        <title> Formulario de Registro - WebMed</title>
+    </head>
+    
+    <body>
+        <header>
+            <a href="../index.html" class="header">
+            <h1>WebMed</h1>
+            <img src="../img/LuJan.jpg" alt= "Logo de la Web" height="100">
+            </a>
+            <p>Enciclopedia médica para estudiantes de ingeniería de la salud y medicina.</p>
+            
+        </header>
+        
+        <nav aria-label="breadcrumb">
+            Estás en:
+                <a href="../index.html">Página principal</a> >
+                <a href="../fRegistro/Rform.html">Formulario de registro</a>
+        </nav>
+
+        <form action="respuesta.html" method="get">
+        <h2>Formulario de Registro</h2>
+        <p><strong>(*)</strong> Campo obligatorio</p>
+
+        <p>
+        Es un campo de texto de una linea.
+        </p>
+        <p>
+            <label for="nombre"><span class="material-icons">person</span> <strong> * Nombre:</strong></label>
+            <input type="text" id="nombre" name="nombre" placeholder="María López" required>
+        </p>
+        <p>
+            Introduce el último dígito de tu DNI.
+        </p>
+        <p>
+            <label for="dni"><span class="material-icons">badge</span> DNI<strong> * DNI </strong></label>
+            <input type="number" id="dni" name="dni" min="0" max="9" placeholder="8" required>
+        </p>
+
+        <p>
+
+            <label for="telefono">&#128222;<strong>Teléfono</strong> (formato: 123-456-7890)</label>
+            <input type="tel" id="telefono" name="telefono" placeholder="123-456-7890" pattern="\d{3}-\d{3}-\d{4}">
+
+        </p>
+
+        <p>
+            Es un campo de texto que sólo admite el correo electrónico.
+        </p>
+        <p>
+            <label for="email">&#9993;<strong> * Correo electrónico</strong></label>
+            <input type="email" id="email" name="email" placeholder="LuJan@gmail.com" required>
+        </p>
+
+        <p>
+            Introduce tu fecha de nacimiento:
+        </p>
+        <p>
+            <label for="fecha-nacimiento">&#128197;<strong>Fecha de nacimiento:</strong></label>
+            <input type="date" id="fecha-nacimiento" name="fecha-nacimiento">
+        </p>
+
+        <p>Elige entre estas opciones:</p>
+        <label>&#9893;<strong>Sexo:</strong></label>
+        
+        <fieldset>
+        <input type="radio" id="hombre" name="sexo" value="hombre">
+        <label for="hombre">Hombre</label>
+        <br>
+        <input type="radio" id="mujer" name="sexo" value="mujer">
+        <label for="mujer">Mujer</label>
+        <br>
+        <input type="radio" id="otro" name="sexo" value="otro">
+        <label for="otro">Otro</label>
+        </fieldset>
+
+        <p>
+
+            <label for="color">Color que te represente: &#127912; </label>
+            <input type="color" id="color" name="color_favorito">
+
+        </p>
+        <p>
+
+            <label for="satisfaccion">Nivel de satisfacción (1 a 10) &#128522;</label>
+            <input type="range" id="satisfaccion" name="satisfaccion" min="1" max="10" value="7" step="1">
+
+        </p>
+
+
+        
+        <input type="checkbox" id="mas-info" name="mas-info">
+        <label for="mas-info"> &#10004; Deseo suscripción premium</label>
+
+        <p>
+        <button type="submit">Enviar</button>
+        </p>
+        </form>
+
+        <footer>
+            <address>
+                <p><span class="material-icons">people</span> Autores: Jani Natasha Paredes Villalba,Lucía Giménes Pelegrín</p>
+                <p><span class="material-icons">location_on</span> Dirección Calle Gran Vía 123, 28013 Madrid, España</p>
+                <p>&#9993; Correo electrónico: <a href="mailto:contacto@ejemplo.com">webMed@gmail.com</a></p>
+                <p><a href="../fContacto/Cform.html"><span class="material-icons">phone</span> Contacta con nosotras!</a></p>
+                <p><a href="../PautasAccesibilidad/pautas.html"><span class="material-icons">hearing</span>Pautas de Accesibilidad de Nuestra Página Web</a></p>
+            </address>
+    
+            <p>&copy; 2024 - Todos los derechos reservados</p>
+            <p><span class="material-icons">warning</span> Aviso Legal | Política de privacidad</p>
+            <p>Fuente: WebMed</p>
+        </footer> 
+    </body>
+</html>

@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+
+/* Estilos generales de alto contraste */
+body {
+    font-family: 'Atkinson Hyperlegible';
+    background-color: #000; /* Fondo negro */
+    color: #FFF; /* Texto blanco */
+    font-size: 1.5em; /* Incrementa el tamaño de la fuente */
+    line-height: 1.8; /* Mejorar la legibilidad */
+}
+
+/* Enlaces */
+a {
+    color: #FFDD00; /* Color para todos los enlaces */
+    text-decoration: underline; /* Subrayar enlaces para mayor visibilidad */
+}
+
+a:hover {
+    background-color: #ffffff; /* Color de fondo al pasar el ratón */
+    color: #000; /* Cambia el color del texto al pasar el ratón */
+}
+
+/* Botones accesibles */
+button {
+    background-color: #FFD700; /* Alto contraste */
+    color: #000; /* Texto oscuro sobre fondo claro */
+    font-size: 1.5rem; /* Fuente más grande */
+    padding: 10px 20px; /* Área de clic más grande */
+    border: 2px solid #FFF; /* Borde visible */
+}
+
+/* Formularios accesibles */
+input, select, textarea {
+    background-color: #FFF; /* Fondo blanco */
+    color: #000; /* Texto negro */
+    font-size: 1.5rem; /* Fuente más grande */
+    padding: 10px;
+    border: 2px solid #FFF;
+}
+
+/* Estilo para elementos de encabezado */
+h1, h2, h3, h4, h5, h6 {
+    color: #FFD700; /* Mantener el alto contraste */
+    font-size: 2rem; /* Tamaños mayores para encabezados */
+}
+
+/* Aumentar el contraste de los bordes y las sombras */
+.box {
+    border: 2px solid #FFF; /* Borde blanco brillante */
+    box-shadow: 0 0 10px #FFF; /* Sombra brillante */
+}
+
+/* Aumentar el contraste de los elementos de formulario */
+input:focus, textarea:focus, select:focus {
+    border-color: #FFD700; /* Borde visible al enfocar */
+    outline: none;
+}
+
+.sidebar-nav{
+    background-color: #002244;
+    color: #FFFFFF;
+}
+
+.sidebar-nav a {
+    color: #FFDD00; /* Enlaces en amarillo claro */
+}
+.sidebar-nav a:hover {
+    background-color: #FFD700; /* Enlaces en dorado al pasar el ratón, asegúrate que tenga suficiente contraste */
+    color: #000; /* Cambia el color del texto al pasar el ratón para más contraste */
+}
+
+.content {
+    background-color: #002244; /* Fondo azul marino oscuro para el contenido */
+    color: #FFFFFF; /* Texto blanco para el contenido */
+}
+
+table, th, td {
+    font-size: 1.1em;
+}
+
+/* Ajustes para evitar el amontonamiento en las tablas */
+td {
+    padding: 12px; /* Aumenta el padding interno de las celdas */
+}
+
+table, th, td {
+    border: 2px solid #FFDD00; /* Bordes amarillos */
+}
+
+th {
+    background-color: #004080; /* Fondo azul oscuro para las cabeceras de la tabla */
+    color: #FFFFFF; /* Texto blanco para las cabeceras de la tabla */
+}
+
+td {
+    background-color: #005B96; /* Fondo azul más claro para las celdas de la tabla */
+    color: #FFFFFF; /* Texto blanco para las celdas */
+}
+
+nav {
+    background-color: #000; /* Fondo azul marino oscuro para alto contraste */
+    color: #FFDD00; /* Texto amarillo claro para mayor contraste */
+}

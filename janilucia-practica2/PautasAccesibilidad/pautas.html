@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../Estilos.css/estiloIndex.css">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <title>Declaración De Accesibilidad-WebMed</title>
+
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/modoNoche.css" media="screen" Title="Modo Noche">
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/combinacion.css" media="screen" Title="Alto contraste y aumento de letra">
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/aumentoLetra.css" media="screen" Title="Estilo de tamaño grande">
+        <link rel="alternate stylesheet" type="text/css" href="../Estilos2.css/contraste.css" media="screen" Title="Estilo de alto contraste">
+    </head>
+    <body>
+        <header>
+            <a href="../index.html" class="header">
+                <h1>WebMed</h1>
+                <img src="../img/LuJan.jpg" alt= "Logo de la Web" height="100">
+                
+            </a>
+            <p>Enciclopedia médica para estudiantes de ingeniería de la salud y medicina.</p>
+        </header>
+
+        <h2><span class="material-icons">hearing</span> Pautas de Accesibilidad de nuestra página web</h2>
+        <nav aria-label="breadcrumb">
+            Estás en:
+                    <a href="../index.html">Página principal</a> >
+                    <a href="../PautasAccesibilidad/pautas.html">Pautas Accesibilidad</a>
+        </nav>
+        <p><strong>Barra de navegación: </strong></p>
+        <ul>
+            <li><a href="#I"><span class="material-icons">language</span> Identificación del Idioma Principal</a></li>
+            <li><a href="#Et"><span class="material-icons">description</span> Etiquetado semántico</a></li>
+            <li><a href="#T"><span class="material-icons">image</span> Texto alternativo</a></li>
+            <li><a href="#U"><span class="material-icons">format_line_spacing</span> Uso de encabezados jerárquicos</a></li>
+            <li><a href="#F"><span class="material-icons">input</span> Formularios accesibles</a></li>
+            <li><a href="#E"><span class="material-icons">link</span> Enlaces descriptivos</a></li>
+            <li><a href="#M"><span class="material-icons">navigation</span> Mecanismos de Navegación Implementados</a></li>
+            <li><a href="#CSS">Implentación de CSS y hojas de estilo accesibles</a></li>
+        </ul>
+
+        <main>
+            <section id="I">
+                <h3>Identificación del Idioma Principal</h3>
+                <p>El atributo <code>lang</code> en el elemento <code>&lt;html&gt;</code> indica que el idioma principal de esta página es el español (<code>lang="es"</code>).</p>
+            </section>
+
+            <section id="Et">
+                <h3>Etiquetado Semántico</h3>
+                <p>Esta página utiliza elementos semánticos como <code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code> , <code>&lt;footer&gt;</code> , <code>&lt;section&gt;</code> y <code>&lt;article&gt;</code>. 
+                    Esto mejora la navegación y comprensión para usuarios con discapacidades visuales y ayuda a  estructurar el contenido de manera clara y comprensible.</p>
+            </section>
+
+            <section id="T">
+                <h3>Texto Alternativo de las Imágenes</h3>
+                <p>Todas las imágenes en este sitio web incluyen un texto alternativo (atributo <code>alt</code>) para describir su contenido. Ejemplo:</p>
+                <figure>
+                    <img src="../img/lector_pantalla.png" alt="Descripción de la imagen">
+                    <figcaption>Símbolo del lector de pantalla.</figcaption>
+                </figure>
+            </section>
+
+            <section id="U">
+                <h3>Uso de encabezados jerárquicos (h1-h6)</h3>
+                <p>Esta página web proporciona una estructura clara y lógica en el contenido.
+                    Esto se logra utilizando correctamente las etiqeutas de encabezado como,
+                    <code>&lt;h1&gt;</code>, <code>&lt;h2&gt;</code>, <code>&lt;h3&gt;</code>,etc. Los lectores de pantalla y otros dispositivos asistivos utilizan esta jerarquía para interpretar la estructura de la página. 
+                </p>
+                <ul>
+                    <li><code>&lt;h1&gt;</code> : Debe ser usado solo para el título principal de la página, que representa el tema general.</li>
+                    <li><code>&lt;h2&gt;</code> y <code>&lt;h3&gt;</code> : Estos encabezados se usan para organizar el contenido en secciones y subsecciones.</li>
+                </ul>
+            </section>
+
+            <section id="F">
+                <h3>Formularios accesibles</h3>
+                <p>Para que un formulario sea accesible, cada campo debe estar claramente etiquetado para que los usuarios con lectores de pantalla puedan entender qué se espera en cada campo. 
+                    Esto se logra mediante el uso de la etiqueta <code>&lt;label&gt;</code>. 
+                </p>
+                <p><code>&lt;label&gt;</code> : Debe estar asociado con su campo de entrada utilizando el atributo <code>for</code>, que debe coincidir con el atributo 
+                    <code>id</code>del campo correspondiente. Esto asegura que cuando un usuario haga clic o seleccione la etiqueta, el campo de entrada asociado obtenga el foco.
+                </p>
+            </section>
+
+            <section id="E">
+                <h3>Enlaces descriptivos</h3>
+                <p>
+                    Los enlaces deben ser claros y descriptivos, brindando información sobre su destino. Los enlaces genéricos como "haz clic aquí" no son suficientes, ya que no proporcionan un
+                    contexto útil a los usuarios con discapacidades.
+                </p>
+                <ul>
+                    <li>Usa textos que describan la acción o el destino del enlace.</li>
+                    <li>Evita los enlaces genéricos, ya que no proporcionan suficiente información.</li>
+                </ul>
+            </section>
+            <section id="M">
+                <h3>Mecanismos de Navegación Implementados</h3>
+                <p>Este sitio web proporciona mecanismos de navegación accesibles mediante:</p>
+                <ul>
+                    <li>Una barra de navegación principal utilizando el elemento <code>&lt;nav&gt;</code>.</li>
+                    <li>Migas de pan (<code>&lt;nav aria-label="breadcrumb"&gt;</code>) para mostrar la jerarquía de navegación.</li>
+                    <li>Enlaces con textos descriptivos y claros.</li>
+                </ul>
+            </section>
+            <section id="CSS">
+                <h3>Implentación de CSS y hojas de estilo accesibles</h3>
+                <p>Este sitio web proporciona múltiples modos de navegación:</p>
+                <ul>
+                    <li><strong>Modo Noche</strong>:El modo noche utiliza colores oscuros para reducir la fatiga visual y la luminosidad de la pantalla en entornos con poca luz. Esto ayuda a disminuir la exposición a la luz azul, lo que puede mejorar la comodidad y el sueño</li>
+                    <li><strong>Estilo de Alto Contraste para Baja Visión</strong>:Los estilos de alto contraste ayudan a las personas con baja visión a distinguir mejor entre el texto y el fondo. Esto es esencial para la accesibilidad, permitiendo que más usuarios accedan a la información sin esfuerzo adicional.</li>
+                    <li><strong>Estilo con Tipo de Letra Mayor:Aumentar el tamaño de la fuente es fundamental para las personas con problemas de visión. Un texto más grande facilita la lectura y la comprensión, asegurando que todos los usuarios puedan acceder al contenido sin problemas.</strong></li>
+                    <li><strong>Estilo de Alto Contraste con Tipo de Letra Mayor:</strong>Combinar alto contraste y un tipo de letra mayor maximiza la accesibilidad para personas con baja visión. Esto permite que quienes tienen dificultades para ver tanto el contraste como el tamaño del texto puedan leer y entender la información sin esfuerzo adicional.</li>
+                </ul>
+            </section>
+        </main>
+        <footer>
+            <address>
+                <p><span class="material-icons">people</span> Autores: Jani Natasha Paredes Villalba,Lucía Giménes Pelegrín</p>
+                <p><span class="material-icons">location_on</span> Dirección Calle Gran Vía 123, 28013 Madrid, España</p>
+                <p>&#9993; Correo electrónico: <a href="mailto:contacto@ejemplo.com">webMed@gmail.com</a></p>
+                <p><a href="../fContacto/Cform.html"><span class="material-icons">phone</span> Contacta con nosotras!</a></p>
+            </address>
+    
+            <p>&copy; 2024 - Todos los derechos reservados</p>
+            <p><span class="material-icons">warning</span> Aviso Legal | Política de privacidad</p>
+            <p>Fuente: WebMed</p>
+        </footer> >  
+        
+    </body>
+
+</html>
