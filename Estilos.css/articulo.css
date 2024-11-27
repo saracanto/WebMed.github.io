@@ -207,6 +207,8 @@ footer {
 a {
     color: #0077A7; /* Color para todos los enlaces */
     text-decoration: underline; /* Subrayar enlaces para mayor visibilidad */
+    visibility: visible;
+    display: inline;
 }
 footer a{
     color:  #FFDD00; /* Color para todos los enlaces */
