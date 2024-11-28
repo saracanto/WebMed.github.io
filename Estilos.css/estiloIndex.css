@@ -92,6 +92,11 @@ footer a{
     text-decoration: underline; /* Subrayar enlaces para mayor visibilidad */
 }
 
+a:focus {
+    color: var(--color-enlaces);
+    background: var(--color-borde-tabla);
+}
+
 /* Media Queries */
 @media (max-width: 677px) {
     main {

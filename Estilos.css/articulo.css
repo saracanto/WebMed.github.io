@@ -217,6 +217,12 @@ footer a{
 header a{
     text-decoration:none;
 }
+
+a:focus {
+    color: #000000;
+    background: var(--color-borde-tabla);
+}
+
 /* Media Queries */
 @media (max-width: 677px) {
     main {

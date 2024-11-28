@@ -147,6 +147,11 @@ header a {
     text-decoration:none;
 }
 
+a:focus {
+    color: var(--color-enlaces);
+    background: var(--color-borde-tabla);
+}
+
 /* Ajustes para pantallas más pequeñas que 662px */
 @media (max-width: 662px) {
     form {
