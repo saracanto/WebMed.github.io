@@ -9,8 +9,7 @@
     --color-fondo-box:rgba(0, 0, 0, 0.5);
     --color-fondo-navegacion: #5bc8e9;
     --color-input-text:#19181f;
-    ;
-
+    --color-borde-tabla:#90CAF9;
 }
 
 header {
@@ -148,7 +147,7 @@ header a {
 }
 
 a:focus {
-    color: var(--color-enlaces);
+    color: #000000;
     background: var(--color-borde-tabla);
 }
 

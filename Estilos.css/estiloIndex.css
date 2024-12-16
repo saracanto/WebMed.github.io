@@ -6,7 +6,7 @@
     --color-borde-navegacion:#ff2dff;
     --color-fondo-enlaces:#51c6fcf1;
     --color-enlaces:#0000;
-
+    --color-borde-tabla:#90CAF9;
 }
 
 /* General */
@@ -93,8 +93,8 @@ footer a{
 }
 
 a:focus {
-    color: var(--color-enlaces);
-    background: var(--color-borde-tabla);
+    color: #000000;
+    background: var(--color-fondo-enlaces);
 }
 
 /* Media Queries */
